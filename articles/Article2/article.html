@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
+    <title>Rimac - QGM Blog</title>
+    <style>
+        #article_image {
+            background-image: url("cover_image.jpg");
+        }
+
+        #aside_image_1 {
+            background-image: url("../Article1/cover_image.jpg");
+        }
+
+        #aside_image_2 {
+            background-image: url("../Article3/cover_image.jpg");
+        }
+
+        #aside_image_3 {
+            background-image: url("../Article4/cover_image.jpeg");
+        }
+    </style>
+</head>
+<body>
+    <div class="logo_and_welcome">
+        <div></div>
+        <img src="../../images/qgm_blog_logo.png" alt="Quick garage manager logo">
+        <h1>Welcome to the <i>Quick garage manager</i> blog</h1>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li onclick="goToPage('../../index.html')"><a>Homepage</a></li>
+            <li onclick="goToPage('../../pages/news.html')"><a>News</a></li>
+            <li onclick="goToPage('../../pages/leasing.html')"><a>Leasing calculator</a></li>
+            <li onclick="goToPage('../../pages/app.html')"><a>App</a></li>
+            <li onclick="goToPage('../../pages/about.html')"><a>About</a></li>
+        </ul>
+    </div>
+    <div id="article_image_container">
+        <div id="article_image" onclick="goToPage('cover_image.jpg', true)"></div>
+    </div>
+    <div id="article_title_container">
+        <h1>Can a hybrid Bugatti live up to the name?</h1>
+    </div>
+    
+    <div class="article_main_body">
+        <aside class="article_aside_container">
+            <div class="aside_more_articles">
+                <h2><i>More articles:</i></h2>
+            </div>
+            <div class="aside_article", onclick="goToPage('../Article1/article.html')">
+                <div class="aside_image_container">
+                    <div class="aside_image" id="aside_image_1"></div>
+                </div>
+                <p>Rimac Nevera tested - the fastest car in the world?</p>
+            </div>
+            <div class="aside_article", onclick="goToPage('../Article3/article.html')">
+                <div class="aside_image_container">
+                    <div class="aside_image" id="aside_image_2"></div>
+                </div>
+                <p>McLaren Speedtail review - a high tech, 3 seater, bullet</p>
+            </div>
+            <div class="aside_article", onclick="goToPage('../Article4/article.html')">
+                <div class="aside_image_container">
+                    <div class="aside_image" id="aside_image_3"></div>
+                </div>
+                <p>Pagani Huayra - was it a failure?</p>
+            </div>
+            <div class="leasing_aside">
+                <h2>Want to know your monthly lease?</h2>
+                <div id="leasing_calculte_button", onclick="goToPage('../../pages/leasing.html')">
+                    <h2>CALCULATE HERE!</h2>
+                </div>
+                <div style="padding: 1px;"></div>
+            </div>
+        </aside>
+        <div class="article_text_container">
+            <div class="by_author_container">
+                <img src="../../images/authors/cb.jpg">
+                <h3>By: Tomislav Celić</h3>
+            </div>
+            <p>
+                With the Bugatti brand now being owned by a Croatian EV manufacturer Rimac, and the Chrion replacement
+                    being teased as a hybrid, can a Bugatti without the W16 feel the same?
+            </p>
+            <p>
+                The mere mention of a Bugatti without the iconic W16 engine raises questions about whether the brand's legacy and unparalleled 
+                performance can be maintained. Bugatti, known for pushing the boundaries of speed and luxury, has set a high standard with 
+                its previous models, and a hybrid evolution signals a departure from the traditional powerhouse that is the W16.
+            </p>
+            <table class="stat_table">
+                <thead>
+                    <tr>
+                        <th>Stats</th>
+                        <th>Bugatti Chiron</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Power (kW)</td>
+                        <td>1103</td>
+                    </tr>
+                    <tr>
+                        <td>Torque (Nm)</td>
+                        <td>1600</td>
+                    </tr>
+                    <tr>
+                        <td>Engine</td>
+                        <td>8.0L Quad-Turbocharged W16</td>
+                    </tr>
+                    <tr>
+                        <td>Top speed (km/h)</td>
+                        <td>420</td>
+                    </tr>
+                    <tr>
+                        <td>0-60 mph</td>
+                        <td>2.5s</td>
+                    </tr>
+                    <tr>
+                        <td>0-100 km/h</td>
+                        <td>2.5s</td>
+                    </tr>
+                    <tr>
+                        <td>0-200 km/h</td>
+                        <td>6.5s</td>
+                    </tr>
+                    <tr>
+                        <td>0-300 km/h</td>
+                        <td>13.6s</td>
+                    </tr>
+                    <tr>
+                        <td>0-400 km/h</td>
+                        <td>32.6s</td>
+                    </tr>
+                    <tr>
+                        <td>1/4 mile time</td>
+                        <td>9.4s</td>
+                    </tr>
+                    <tr>
+                        <td>Braking 100-0 km/h</td>
+                        <td>31.4m</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p>
+                The transition to a hybrid powertrain reflects the broader automotive industry's shift toward sustainability 
+                and environmental consciousness. While purists may mourn the absence of the distinctive roar of the W16, embracing 
+                hybrid technology aligns Bugatti with contemporary trends. The integration of electric components not only reduces carbon 
+                emissions but also opens avenues for innovative engineering, potentially enhancing overall performance. It begs the question: 
+                Can a Bugatti, with a newfound commitment to eco-friendly practices, 
+                still captivate its audience with the same level of awe-inspiring speed and opulence?
+            </p>
+            <div class="video_container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PkkV1vLHUvQ?si=LaJnfqvu1Bm98sRC" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p>
+                Bugatti has a storied history of creating automotive masterpieces, and the prospect of a hybrid Bugatti introduces a new chapter 
+                in the brand's evolution. Rimac's expertise in electric vehicles adds a layer of anticipation, as the hybrid Bugatti promises 
+                cutting-edge technology and a glimpse into the future of hypercar engineering. The challenge lies in striking a balance between
+                 maintaining the brand's heritage and embracing the transformative potential of hybridization. As automotive enthusiasts eagerly 
+                 await the hybrid Bugatti's debut, the conversation surrounding its ability to live up to the revered Bugatti name continues to 
+                 intrigue and spark speculation.
+            </p>
+            <h3>So what is our verdict?</h3>
+            <p>
+                In conclusion, the hybrid Bugatti represents more than just a shift in powertrain; it symbolizes the automotive industry's 
+                adaptation to changing norms. While traditionalists may be skeptical, the prospect of a Bugatti-Rimac collaboration opens 
+                doors to unparalleled innovation. The hybrid Bugatti aims not only to live up to the brand's prestigious name but also to 
+                redefine what a hypercar can be in the 21st century. Only time will reveal whether this bold move toward sustainability will 
+                enhance Bugatti's legacy or mark a significant departure from its iconic past..<br/><br/>
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="../../images/qgm_blog_logo.png">
+        <p>Quick garage manager blog. All rights reserved 2023.</p>
+    </div>
+    <script src="../../scripts/controller.js"></script>
+</body>
+</html>

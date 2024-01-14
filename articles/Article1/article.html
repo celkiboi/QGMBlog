@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
+    <title>Rimac - QGM Blog</title>
+    <style>
+        #article_image {
+            background-image: url("cover_image.jpg");
+        }
+
+        #aside_image_1 {
+            background-image: url("../Article2/cover_image.jpg");
+        }
+
+        #aside_image_2 {
+            background-image: url("../Article3/cover_image.jpg");
+        }
+
+        #aside_image_3 {
+            background-image: url("../Article4/cover_image.jpeg");
+        }
+    </style>
+</head>
+<body>
+    <div class="logo_and_welcome">
+        <div></div>
+        <img src="../../images/qgm_blog_logo.png" alt="Quick garage manager logo">
+        <h1>Welcome to the <i>Quick garage manager</i> blog</h1>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li onclick="goToPage('../../index.html')"><a>Homepage</a></li>
+            <li onclick="goToPage('../../pages/news.html')"><a>News</a></li>
+            <li onclick="goToPage('../../pages/leasing.html')"><a>Leasing calculator</a></li>
+            <li onclick="goToPage('../../pages/app.html')"><a>App</a></li>
+            <li onclick="goToPage('../../pages/about.html')"><a>About</a></li>
+        </ul>
+    </div>
+    <div id="article_image_container">
+        <div id="article_image" onclick="goToPage('cover_image.jpg', true)"></div>
+    </div>
+    <div id="article_title_container">
+        <h1>Rimac Nevera tested - the fastest car in the world?</h1>
+    </div>
+    
+    <div class="article_main_body">
+        <aside class="article_aside_container">
+            <div class="aside_more_articles">
+                <h2><i>More articles:</i></h2>
+            </div>
+            <div class="aside_article", onclick="goToPage('../Article2/article.html')">
+                <div class="aside_image_container">
+                    <div class="aside_image" id="aside_image_1"></div>
+                </div>
+                <p>Can a hybrid Bugatti live up to the name?</p>
+            </div>
+            <div class="aside_article", onclick="goToPage('../Article3/article.html')">
+                <div class="aside_image_container">
+                    <div class="aside_image" id="aside_image_2"></div>
+                </div>
+                <p>McLaren Speedtail review - a high tech, 3 seater, bullet</p>
+            </div>
+            <div class="aside_article", onclick="goToPage('../Article4/article.html')">
+                <div class="aside_image_container">
+                    <div class="aside_image" id="aside_image_3"></div>
+                </div>
+                <p>Pagani Huayra - was it a failure?</p>
+            </div>
+            <div class="leasing_aside">
+                <h2>Want to know your monthly lease?</h2>
+                <div id="leasing_calculte_button", onclick="goToPage('../../pages/leasing.html')">
+                    <h2>CALCULATE HERE!</h2>
+                </div>
+                <div style="padding: 1px;"></div>
+            </div>
+        </aside>
+        <div class="article_text_container">
+            <div class="by_author_container">
+                <img src="../../images/authors/cb.jpg">
+                <h3>By: Tomislav Celić</h3>
+            </div>
+            <p>
+                Croatian hypercar company Rimac Automobilis latest hypercar is a car that tests the limits of speed. 
+                With its 1914 horsepower and 2300 Nm of torque, can it become the fastest car in the world, or will it fall short?
+            </p>
+            <p>
+                For those unaware, Rimac is a Croatian car company founded in 2009. Despite their age, they have demonstrated that they 
+                know how to build a car. The original 2016 Rimac Concept One was a thing of magic, being produced in 8 examples, 
+                with 7 remaining
+                (<a class="link" href="https://topgear.fandom.com/wiki/Hammond%27s_Rimac_Crash_(TGT)">see Richard Hammonds crash</a>).
+                Despite a few issues, the car was way ahead of its time and 
+                was considered to be one of the fastest cars of its time. Now, the legendary Concept One has a successor, the Nevera.
+            </p>
+            <table class="stat_table">
+                <thead>
+                    <tr>
+                        <th>Stats</th>
+                        <th>Rimac Nevera</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Power (kW)</td>
+                        <td>1400</td>
+                    </tr>
+                    <tr>
+                        <td>Torque (Nm)</td>
+                        <td>2360</td>
+                    </tr>
+                    <tr>
+                        <td>Battery (kWh)</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>Top speed (km/h)</td>
+                        <td>412</td>
+                    </tr>
+                    <tr>
+                        <td>0-60 m/h</td>
+                        <td>1.74s</td>
+                    </tr>
+                    <tr>
+                        <td>0-100 km/h</td>
+                        <td>1.82s</td>
+                    </tr>
+                    <tr>
+                        <td>0-200 km/h</td>
+                        <td>4.42s</td>
+                    </tr>
+                    <tr>
+                        <td>0-300 km/h</td>
+                        <td>9.23s</td>
+                    </tr>
+                    <tr>
+                        <td>0-400 km/h</td>
+                        <td>21.32s</td>
+                    </tr>
+                    <tr>
+                        <td>0-100-0 km/h</td>
+                        <td>4.03s</td>
+                    </tr>
+                    <tr>
+                        <td>0-200-0 km/h</td>
+                        <td>8.85s</td>
+                    </tr>
+                    <tr>
+                        <td>0-300-0 km/h</td>
+                        <td>15.68s</td>
+                    </tr>
+                    <tr>
+                        <td>0-400-0 km/h</td>
+                        <td>29.94s</td>
+                    </tr>
+                    <tr>
+                        <td>standing 1/8 mile (201m)</td>
+                        <td>5.46s</td>
+                    </tr>
+                    <tr>
+                        <td>standing 1/4 mile (402m)</td>
+                        <td>8.26s</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                Nevera has managed to break 23 records in one day (including the record for most records in a day). 
+                Yet still, that is not the most surprising thing about it. As a GT hypercar, meant to rival the Bugatti Chiron,
+                 it's incredibly easy to drive, and it's incredibly comfortable. With 120 kWh of usable battery capacity and efficiency 
+                 of 25-30 kWh/100km, it will easily get you 500 km of range in eco-driving, while the figure drops to 400 km when 
+                 you spend less time being careful. With fast road driving, the figure can drop as low as 160 km, but that is to be 
+                 expected, from a car that has nearly 1.5 MW of power. The interior is incredible, with build quality on par with the 
+                 best of Porsche. With Android Auto, Apple car play, and a custom-built Focal sound system, you really can just relax 
+                 and not take things too seriously. 
+            </p>
+            <div class="video_container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cSp2CN-XQX8?si=jLZ7uoE-WUXXj9po" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p>
+                Nevera is a proper speed demon. With 1400+ KW of power and 2300+ Nm of torque, it shatters every single acceleration record. 
+                Don't think it's a one-trick pony when it comes to performance. With custom-built Brembo brakes and an aero break, 
+                it's really good at braking. Cornering too, is marvelous. Great suspension, low center of gravity, active aero and torque 
+                vectoring make going around corners incredibly fun, proven by the fact that the car goes 7:05 around the ring, 
+                some 30 seconds faster than its rival, Chiron. The top speed is 412 km/h, so it doesn't bog down like other electric cars.
+            </p>
+            <h3>So what is our verdict?</h3>
+            <p>
+                The Nevera is absolutely deserving of hype. The way it drives, the way it rides is something that we haven't seen so far. 
+                It absolutely deserves to be named "the fastest car in the world".<br/><br/>
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="../../images/qgm_blog_logo.png">
+        <p>Quick garage manager blog. All rights reserved 2023.</p>
+    </div>
+    <script src="../../scripts/controller.js"></script>
+</body>
+</html>

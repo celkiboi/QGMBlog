@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
+    <title>Pagani - QGM Blog</title>
+    <style>
+        #article_image {
+            background-image: url("cover_image.jpeg");
+        }
+
+        #aside_image_1 {
+            background-image: url("../Article2/cover_image.jpg");
+        }
+
+        #aside_image_2 {
+            background-image: url("../Article3/cover_image.jpg");
+        }
+
+        #aside_image_3 {
+            background-image: url("../Article1/cover_image.jpg");
+        }
+    </style>
+</head>
+<body>
+    <div class="logo_and_welcome">
+        <div></div>
+        <img src="../../images/qgm_blog_logo.png" alt="Quick garage manager logo">
+        <h1>Welcome to the <i>Quick garage manager</i> blog</h1>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li onclick="goToPage('../../index.html')"><a>Homepage</a></li>
+            <li onclick="goToPage('../../pages/news.html')"><a>News</a></li>
+            <li onclick="goToPage('../../pages/leasing.html')"><a>Leasing calculator</a></li>
+            <li onclick="goToPage('../../pages/app.html')"><a>App</a></li>
+            <li onclick="goToPage('../../pages/about.html')"><a>About</a></li>
+        </ul>
+    </div>
+    <div id="article_image_container">
+        <div id="article_image" onclick="goToPage('cover_image.jpeg', true)"></div>
+    </div>
+    <div id="article_title_container">
+        <h1>Pagani Huayra - was it a failure?</h1>
+    </div>
+    
+    <div class="article_main_body">
+        <aside class="article_aside_container">
+            <div class="aside_more_articles">
+                <h2><i>More articles:</i></h2>
+            </div>
+            <div class="aside_article", onclick="goToPage('../Article1/article.html')">
+                <div class="aside_image_container">
+                    <div class="aside_image" id="aside_image_3"></div>
+                </div>
+                <p>Rimac Nevera tested - the fastest car in the world?</p>
+            </div>
+            <div class="aside_article", onclick="goToPage('../Article2/article.html')">
+                <div class="aside_image_container">
+                    <div class="aside_image" id="aside_image_1"></div>
+                </div>
+                <p>Can a hybrid Bugatti live up to the name?</p>
+            </div>
+            <div class="aside_article", onclick="goToPage('../Article3/article.html')">
+                <div class="aside_image_container">
+                    <div class="aside_image" id="aside_image_2"></div>
+                </div>
+                <p>McLaren Speedtail review - a high tech, 3 seater, bullet</p>
+            </div>
+            <div class="leasing_aside">
+                <h2>Want to know your monthly lease?</h2>
+                <div id="leasing_calculte_button", onclick="goToPage('../../pages/leasing.html')">
+                    <h2>CALCULATE HERE!</h2>
+                </div>
+                <div style="padding: 1px;"></div>
+            </div>
+        </aside>
+        <div class="article_text_container">
+            <div class="by_author_container">
+                <img src="../../images/authors/cb.jpg">
+                <h3>By: Tomislav Celić</h3>
+            </div>
+            <p>
+                With the new Utopia coming, and the Zonda production still not over, it's time we discuss whether or not
+                    the Huayra was a right car for Pagani. The italian hypercar is analized in this opinion piece.
+            </p>
+            <p>
+                The Pagani Huayra marked a departure from its predecessor, the Zonda, introducing a new era of design and engineering
+                 for the brand. With the anticipation surrounding the Utopia and the enduring popularity of the Zonda, critics question 
+                 whether the Huayra was the right move for Pagani. Analyzing its design, the Huayra's distinctive and aerodynamic styling 
+                 set it apart, featuring innovative elements such as active aerodynamics and a unique gull-wing door mechanism. However, 
+                the subjective nature of design preferences makes it challenging to categorize the Huayra's aesthetics as an outright success or failure.
+            </p>
+            <table class="stat_table">
+                <thead>
+                    <tr>
+                        <th>Stats</th>
+                        <th>Pagani Huayra</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Power (kW)</td>
+                        <td>562</td>
+                    </tr>
+                    <tr>
+                        <td>Torque (Nm)</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>Engine</td>
+                        <td>6.0L Twin-Turbocharged V12</td>
+                    </tr>
+                    <tr>
+                        <td>Top speed (km/h)</td>
+                        <td>370</td>
+                    </tr>
+                    <tr>
+                        <td>0-60 mph</td>
+                        <td>3.0s</td>
+                    </tr>
+                    <tr>
+                        <td>0-100 km/h</td>
+                        <td>3.2s</td>
+                    </tr>
+                    <tr>
+                        <td>0-200 km/h</td>
+                        <td>8.2s</td>
+                    </tr>
+                    <tr>
+                        <td>1/4 mile time</td>
+                        <td>10.8s</td>
+                    </tr>
+                    <tr>
+                        <td>Braking 100-0 km/h</td>
+                        <td>30.4m</td>
+                    </tr>
+                    <tr>
+                        <td>Production Years</td>
+                        <td>2012-2020</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p>
+                Performance-wise, the Pagani Huayra lived up to its hypercar status, 
+                boasting a powerful V12 engine and cutting-edge technology. 
+                Its bespoke AMG-sourced powerplant delivered impressive numbers, yet the hypercar landscape is ever-evolving, 
+                with new contenders consistently pushing the boundaries. Some argue that the Huayra, while undoubtedly a formidable machine, 
+                faced fierce competition that overshadowed its achievements, contributing to the perception of its relative success or failure.
+            </p>
+            <div class="video_container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WnyPtKQKP3Y?si=LZm7yTJOlBrHxB2d" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p>
+                The reception of the Pagani Huayra within the hypercar community further fuels the debate. 
+                Enthusiasts and collectors appreciate its exclusivity, craftsmanship, and attention to detail, while others contend that it faced 
+                challenges in standing out amidst the hypercar elite. The impending arrival of the Utopia 
+                and the enduring appeal of the Zonda add layers to the discussion, raising questions about the Huayra's lasting impact on Pagani's legacy.
+            </p>
+            <h3>So what is our verdict?</h3>
+            <p>
+                In conclusion, assessing the success or failure of the Pagani Huayra requires a nuanced understanding of its design, 
+                performance, and reception. As Pagani continues to evolve, the Huayra's role in shaping the brand's identity becomes
+                 clearer. Whether perceived as a triumph or a lesson in the ever-competitive world of hypercars, the Huayra remains a 
+                 significant chapter in Pagani's storied history, contributing to the ongoing narrative of automotive excellence..<br/><br/>
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="../../images/qgm_blog_logo.png">
+        <p>Quick garage manager blog. All rights reserved 2023.</p>
+    </div>
+    <script src="../../scripts/controller.js"></script>
+</body>
+</html>

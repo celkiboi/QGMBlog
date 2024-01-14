@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Leasing - QGM Blog</title>
+    <script src="leasing.js"></script>
+</head>
+<body>
+    <div class="logo_and_welcome">
+        <div></div>
+        <img src="../images/qgm_blog_logo.png" alt="Quick garage manager logo">
+        <h1>Welcome to the <i>Quick garage manager</i> blog</h1>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li onclick="goToPage('../index.html')"><a>Homepage</a></li>
+            <li onclick="goToPage('news.html')"><a>News</a></li>
+            <li><a>Leasing calculator</a></li>
+            <li onclick="goToPage('app.html')"><a>App</a></li>
+            <li onclick="goToPage('about.html')"><a>About</a></li>
+        </ul>
+    </div>
+    <div class="calculator_container">
+        <h2>Leasing Calculator</h2>
+        <div class="currency_options">
+            <label for="currency" class="currency_label">Select Currency:</label>
+            <select id="currency" onchange="updateCurrencySymbol()">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+        </div>
+        <label for="carPrice">Car Price (<span id="currencySymbolCarPrice">$</span>):</label>
+        <input type="number" id="carPrice" placeholder="Enter car price" required>
+    
+        <label for="downPayment">Down Payment (<span id="currencySymbolDownPayment">$</span>):</label>
+        <input type="number" id="downPayment" placeholder="Enter down payment" required>
+    
+        <label for="loanTerm">Loan Term (months):</label>
+        <input type="number" id="loanTerm" placeholder="Enter loan term" required>
+    
+        <label for="interestRate">Interest Rate (%):</label>
+        <input type="number" id="interestRate" placeholder="Enter interest rate" required>
+    
+        <button onclick="calculateLease()" id="calculate_button">Calculate</button>
+    
+        <h3>Monthly Payment: <span id="monthlyPayment">0</span> <span id="selectedCurrencyResult">$</span></h3>
+        <div class="line"></div>
+        <p></br></br></br></br></p>
+    </div>
+
+    <div class="alt_footer">
+        <img src="../images/qgm_blog_logo.png">
+        <p>Quick garage manager blog. All rights reserved 2023.</p>
+    </div>
+
+    <script src="../scripts/leasing.js"></script>
+    <script src="../scripts/controller.js"></script>
+</body>
+</html>

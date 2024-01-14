@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Homepage - QGM Blog</title>
+</head>
+<body>
+    <div class="logo_and_welcome">
+        <div></div>
+        <img src="images/qgm_blog_logo.png" alt="Quick garage manager logo">
+        <h1>Welcome to the <i>Quick garage manager</i> blog</h1>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li><a>Homepage</a></li>
+            <li onclick="goToPage('pages/news.html')"><a>News</a></li>
+            <li onclick="goToPage('pages/leasing.html')"><a>Leasing calculator</a></li>
+            <li onclick="goToPage('pages/app.html')"><a>App</a></li>
+            <li onclick="goToPage('pages/about.html')"><a>About</a></li>
+        </ul>
+    </div>
+    <div class="article_image_container" onclick="goToPage('articles/Article1/article.html')">
+        <div class="article_image_window"></div>
+        <div class="featured_pick">
+            <h2>Featured article:</h2>
+        </div>
+        <div class="article_title_container">
+            <h2>Rimac Nevera tested - The fastest car in the world?</h2>
+        </div>
+    </div>
+    <div class="editors_pick_container">
+        <div>
+            <h2><i>Editors pick:</i></h2>
+        </div>
+    </div>
+    <div class="small_articles_container">
+        <div>
+            <img src="articles/Article2/cover_image.jpg">
+            <div class ="article_details", onclick="goToPage('articles/Article2/article.html')">
+                <h2>Can a hybrid Bugatti live up to the name?</h2>
+                <p>With the Bugatti brand now being owned by a Croatian EV manufacturer Rimac, and the Chrion replacement
+                    being teased as a hybrid, can a Bugatti without the W16 feel the same?
+                </p>
+            </div>
+        </div>
+        <div>
+            <img src="articles/Article3/cover_image.jpg">
+            <div class ="article_details", onclick="goToPage('articles/Article3/article.html')">
+                <h2>McLaren Speedtail review - a high tech, 3 seater, bullet</h2>
+                <p>The new hybrid McLaren speedtail is a slippery bullet. The 3 seater tribute to the original McLaren F1
+                    is as groundbreaking as it's predecessor, but is it worth is multi million dollar price tag?
+                </p>
+            </div>
+        </div>
+        <div>
+            <img src="articles/Article4/cover_image.jpeg">
+            <div class ="article_details", onclick="goToPage('articles/Article4/article.html')">
+                <h2>Pagani Huayra - was it a failure?</h2>
+                <p>With the new Utopia coming, and the Zonda production still not over, it's time we discuss whether or not
+                    the Huayra was a right car for Pagani. The italian hypercar is analized in this opinion piece.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="images/qgm_blog_logo.png">
+        <p>Quick garage manager blog. All rights reserved 2023.</p>
+    </div>
+
+    <script src="scripts/controller.js"></script>
+</body>
+</html>

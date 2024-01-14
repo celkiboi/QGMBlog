@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
+    <title>Rimac - QGM Blog</title>
+    <style>
+        #article_image {
+            background-image: url("cover_image.jpg");
+        }
+
+        #aside_image_1 {
+            background-image: url("../Article2/cover_image.jpg");
+        }
+
+        #aside_image_2 {
+            background-image: url("../Article1/cover_image.jpg");
+        }
+
+        #aside_image_3 {
+            background-image: url("../Article4/cover_image.jpeg");
+        }
+    </style>
+</head>
+<body>
+    <div class="logo_and_welcome">
+        <div></div>
+        <img src="../../images/qgm_blog_logo.png" alt="Quick garage manager logo">
+        <h1>Welcome to the <i>Quick garage manager</i> blog</h1>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li onclick="goToPage('../../index.html')"><a>Homepage</a></li>
+            <li onclick="goToPage('../../pages/news.html')"><a>News</a></li>
+            <li onclick="goToPage('../../pages/leasing.html')"><a>Leasing calculator</a></li>
+            <li onclick="goToPage('../../pages/app.html')"><a>App</a></li>
+            <li onclick="goToPage('../../pages/about.html')"><a>About</a></li>
+        </ul>
+    </div>
+    <div id="article_image_container">
+        <div id="article_image" onclick="goToPage('cover_image.jpg', true)"></div>
+    </div>
+    <div id="article_title_container">
+        <h1>McLaren Speedtail review - a high tech, 3 seater, bullet</h1>
+    </div>
+    
+    <div class="article_main_body">
+        <aside class="article_aside_container">
+            <div class="aside_more_articles">
+                <h2><i>More articles:</i></h2>
+            </div>
+            <div class="aside_article", onclick="goToPage('../Article2/article.html')">
+                <div class="aside_image_container">
+                    <div class="aside_image" id="aside_image_1"></div>
+                </div>
+                <p>Can a hybrid Bugatti live up to the name?</p>
+            </div>
+            <div class="aside_article", onclick="goToPage('../Article1/article.html')">
+                <div class="aside_image_container">
+                    <div class="aside_image" id="aside_image_2"></div>
+                </div>
+                <p>Rimac Nevera tested - the fastest car in the world?</p>
+            </div>
+            <div class="aside_article", onclick="goToPage('../Article4/article.html')">
+                <div class="aside_image_container">
+                    <div class="aside_image" id="aside_image_3"></div>
+                </div>
+                <p>Pagani Huayra - was it a failure?</p>
+            </div>
+            <div class="leasing_aside">
+                <h2>Want to know your monthly lease?</h2>
+                <div id="leasing_calculte_button", onclick="goToPage('../../pages/leasing.html')">
+                    <h2>CALCULATE HERE!</h2>
+                </div>
+                <div style="padding: 1px;"></div>
+            </div>
+        </aside>
+        <div class="article_text_container">
+            <div class="by_author_container">
+                <img src="../../images/authors/cb.jpg">
+                <h3>By: Tomislav Celić</h3>
+            </div>
+            <p>
+                The new hybrid McLaren speedtail is a slippery bullet. The 3 seater tribute to the original McLaren F1
+                    is as groundbreaking as it's predecessor, but is it worth is multi million dollar price tag?
+            </p>
+            <p>
+                The new hybrid McLaren Speedtail emerges as a sleek and aerodynamic bullet on wheels, paying homage to its legendary predecessor, 
+                the McLaren F1. This futuristic three-seater is a testament to McLaren's commitment to innovation and pushing the boundaries of 
+                automotive engineering. As a direct successor to the iconic F1, the Speedtail carries the weight of expectations, promising not only 
+                speed but a revolutionary driving experience.
+            </p>
+            <table class="stat_table">
+                <thead>
+                    <tr>
+                        <th>Stats</th>
+                        <th>McLaren Speedtail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Power (kW)</td>
+                        <td>772</td>
+                    </tr>
+                    <tr>
+                        <td>Torque (Nm)</td>
+                        <td>848</td>
+                    </tr>
+                    <tr>
+                        <td>Engine</td>
+                        <td>4.0L Twin-Turbocharged V8</td>
+                    </tr>
+                    <tr>
+                        <td>Top speed (km/h)</td>
+                        <td>403</td>
+                    </tr>
+                    <tr>
+                        <td>0-60 mph</td>
+                        <td>2.9s</td>
+                    </tr>
+                    <tr>
+                        <td>0-100 km/h</td>
+                        <td>3.0s</td>
+                    </tr>
+                    <tr>
+                        <td>0-200 km/h</td>
+                        <td>5.0s</td>
+                    </tr>
+                    <tr>
+                        <td>0-300 km/h</td>
+                        <td>12.8s</td>
+                    </tr>
+                    <tr>
+                        <td>1/4 mile time</td>
+                        <td>10.1s</td>
+                    </tr>
+                    <tr>
+                        <td>Braking 100-0 km/h</td>
+                        <td>30.2m</td>
+                    </tr>
+                    <tr>
+                        <td>Production Years</td>
+                        <td>2020-2021</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p>
+                Designed as a tribute to the original F1, the McLaren Speedtail boasts a futuristic aesthetic that combines cutting-edge technology with 
+                the spirit of its predecessor. The three-seater configuration, with the central driving position reminiscent of the F1, adds a distinctive 
+                touch to the hypercar's interior. It's not just a car; it's a carefully crafted masterpiece that blends luxury, performance, and a sense of
+                nostalgia.
+                But the question that looms large is whether the multi-million-dollar price tag is justified by the Speedtail's exceptional features.
+            </p>
+            <div class="video_container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_UKBxM7m7qo?si=hHgyR3CblXwlRBCN" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p>
+                The McLaren Speedtail isn't merely a high-speed machine; it's a showcase of advanced technology and engineering prowess. The hybrid powertrain,
+                 combining an internal combustion engine with electric motors, 
+                propels the Speedtail to remarkable speeds while maintaining efficiency. The aerodynamic design, 
+                with its elongated tail and active elements, contributes to the hypercar's stability and top-tier performance. 
+                As with any masterpiece, however, the true worth of the McLaren Speedtail lies not just in its technical specifications but in the 
+                overall experience it offers to the fortunate driver.
+            </p>
+            <h3>So what is our verdict?</h3>
+            <p>
+                In conclusion, the McLaren Speedtail stands as a testament to McLaren's commitment to automotive excellence. It successfully marries
+                 the legacy of the McLaren F1 with state-of-the-art technology, creating a hypercar that not only pushes the boundaries of speed
+                  but also delivers a unique and unforgettable driving experience. While the multi-million-dollar price tag may be a significant 
+                  investment, for those who seek the epitome of automotive innovation and craftsmanship,
+                 the McLaren Speedtail emerges as a worthy successor to the F1, leaving an indelible mark on the world of hypercars..<br/><br/>
+            </p>
+        </div>
+       
+    </div>
+    <div class="footer">
+        <img src="../../images/qgm_blog_logo.png">
+        <p>Quick garage manager blog. All rights reserved 2023.</p>
+    </div>
+    <script src="../../scripts/controller.js"></script>
+</body>
+</html>
